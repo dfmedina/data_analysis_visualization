@@ -1,14 +1,13 @@
 -- Create database for the project
 CREATE DATABASE dav;
 
--- Create schema for the project
-CREATE SCHEMA dav;
-
 -- Create user
 CREATE USER dba PASSWORD 'root';
 -- Grant permissions
 GRANT ALL ON DATABASE dav TO dba;
-GRANT ALL ON ALL TABLES IN SCHEMA dav TO dba;
+
+-- Create schema for the project
+CREATE SCHEMA dav;
 
 -- Table: dav.data_landing
 
