@@ -24,4 +24,4 @@ with open(r'' + dataset + '', 'r') as f:
 conn.close()
 
 
-# TODO: create methods, unittest, main application, log, 
+# TODO: create methods, unittest, main application, log,
