@@ -17,7 +17,11 @@ with open(r'' + dataset + '', 'r') as f:
                       columns=('ticker', 'date', 'open', 'high', 'low', 'close', 'volume', '"ex-dividend"',
                                'split_ratio', 'adj_open', 'adj_high', 'adj_low', 'adj_close', 'adj_volume'),
                       sep=',')
+        print "data imported"  # TODO: add this to log
     except Exception, e:
             print e.message
             # print "Data could not be imported"  # TODO: add this to log
 conn.close()
+
+
+# TODO: create methods, unittest, main application, log, 
