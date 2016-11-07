@@ -8,3 +8,4 @@ Header: ticker, date, open, high, low, close, volume, ex-dividend, split_ratio, 
 Data-set for companies: http://www.nasdaq.com/screening/companies-by-region.aspx?region=North+America
 Description:  Ticker code for each company and associated market
 Header: Symbol, Name, LastSale, MarketCap, ADR TSO, Country, IPOyear, Sector, Industry, Summary Quote
+
