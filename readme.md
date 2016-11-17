@@ -13,15 +13,16 @@ Header: Symbol, Name, LastSale, MarketCap, ADR TSO, Country, IPOyear, Sector, In
 </p>
 
 
-Queries:
-... *    Company with the largest number of shares in an specific time range
-... *    Company with the lowest number of shares in an specific time range
-... *    Market with better performance in an specific time range
-... *    Top 5 companies with highest earnings in an specific date
+Queries: </br>
+
+<li>Company with the largest number of shares in an specific time range</li>
+<li>Company with the lowest number of shares in an specific time range</li>
+<li>Market with better performance in an specific time range</li>
+<li>Top 5 companies with highest earnings in an specific date</li>
 
 
 
-​
+
 Normalizacion:
 Identificar entidades
 Identificar queries
