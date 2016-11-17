@@ -23,7 +23,7 @@ CREATE TABLE dav.data_landing
   low character varying(50),
   close character varying(50),
   volume character varying(50),
-  "ex-dividend" character varying(50),
+  "ex-dividend" character varying(50), -- change to underscore
   split_ratio character varying(50),
   adj_open character varying(50),
   adj_high character varying(50),
