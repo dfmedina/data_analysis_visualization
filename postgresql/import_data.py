@@ -8,7 +8,7 @@ class DataImporter(object):
 
     def __init__(self, dbname, user, passwd='root', host='localhost', port=5432):
         dir_path = os.path.dirname(os.path.abspath(__file__))
-        self.dataset = os.path.join(dir_path, '../data/WIKI_PRICES.csv')
+        self.dataset = os.path.join(dir_path, '../datasets/WIKI_PRICES.csv')
         self.host = host
         self.dbname = dbname
         self.user = user
@@ -25,21 +25,22 @@ class DataImporter(object):
         with open(r'%s' % self.dataset, 'r') as f:
             try:
                 logging.info('Truncate existing data')
-                cur.execute('TRUNCATE dav.data_landing;')  # TODO: unittest
+                cur.execute('TRUNCATE dav.data_landing;')
                 logging.info('Importing data')
                 cur.copy_from(f,
                               'dav.data_landing',
-                              columns=('ticker', 'date', 'open', 'high', 'low', 'close', 'volume', '"ex-dividend"',
+                              columns=('ticker', 'date', 'open', 'high', 'low', 'close', 'volume', 'ex_dividend',
                                        'split_ratio', 'adj_open', 'adj_high', 'adj_low', 'adj_close', 'adj_volume'),
                               sep=',')
+                conn.commit()
                 logging.info('Data imported')
             except Exception, e:
-                logging.info(e.message)
-                logging.info('Error importing data')
+                logging.error(e.message)
+                logging.error('Error importing data')
         conn.close()
 
 if __name__ == '__main__':
         importer = DataImporter('dav', 'dba')
         importer.import_data()
 
-# TODO: create class with methods, unittest, main application, log
+# TODO: create unittest
