@@ -37,3 +37,23 @@ WITH (
       );
 ALTER TABLE dav.data_landing
 OWNER TO dba;
+
+--DROP TABLE dav.company_landing;
+
+CREATE TABLE dav.company_landing
+(
+  symbol character varying(100) NOT NULL,
+  name character varying(100) NOT NULL,
+  last_sale character varying(100),
+  market_cap character varying(100),
+  country character varying(100),
+  ipo_year character varying(100),
+  sector character varying(100),
+  industry character varying(100),
+  CONSTRAINT company_landing_pkey PRIMARY KEY (symbol)
+)
+WITH (
+  OIDS=FALSE
+);
+ALTER TABLE dav.company_landing
+  OWNER TO dba;

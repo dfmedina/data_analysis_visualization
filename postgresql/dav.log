@@ -1,22 +1,45 @@
 INFO:root:Starting connection to database
 INFO:root:Connection open
-INFO:root:Opening dataset
+INFO:root:Opening data-set
 INFO:root:Truncate existing data
 INFO:root:Importing data
-ERROR:root:el valor es demasiado largo para el tipo character varying(20)
-CONTEXT:  COPY data_landing, línea 3630202, columna adj_open: «0.0035574300059213904»
+ERROR:root:datos extra después de la última columna esperada
+CONTEXT:  COPY company_landing, línea 5197: «ULTA,Ulta Salon, Cosmetics & Fragrance Inc.,228.17,14230907911,United States,2007,Consumer Services,...»
 
 ERROR:root:Error importing data
 INFO:root:Starting connection to database
 INFO:root:Connection open
-INFO:root:Opening dataset
+INFO:root:Opening data-set
+INFO:root:Truncate existing data
+INFO:root:Importing data
+ERROR:root:datos extra después de la última columna esperada
+CONTEXT:  COPY company_landing, línea 5381: «VTRB,Ventas Realty, Limited Partnership // Ventas Capital Corporati,25.69,0,United States,n/a,Consum...»
+
+ERROR:root:Error importing data
+INFO:root:Starting connection to database
+INFO:root:Connection open
+INFO:root:Opening data-set
+INFO:root:Truncate existing data
+INFO:root:Importing data
+ERROR:root:datos extra después de la última columna esperada
+CONTEXT:  COPY company_landing, línea 5559: «WYNN,Wynn Resorts, Limited,88.04,8961671804,United States,2002,Consumer Services,Hotels/Resorts»
+
+ERROR:root:Error importing data
+INFO:root:Starting connection to database
+INFO:root:Connection open
+INFO:root:Opening data-set
 INFO:root:Truncate existing data
 INFO:root:Importing data
 INFO:root:Data imported
 INFO:root:Starting connection to database
 INFO:root:Connection open
-INFO:root:Opening dataset
+INFO:root:Opening data-set
 INFO:root:Truncate existing data
 INFO:root:Importing data
 INFO:root:Data imported
+INFO:root:Starting connection to database
+INFO:root:Connection open
+INFO:root:Opening data-set
+INFO:root:Truncate existing data
+INFO:root:Importing data
 INFO:root:Data imported
