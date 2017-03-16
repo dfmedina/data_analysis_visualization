@@ -2,7 +2,6 @@ import psycopg2
 import os
 import logging
 
-
 class DataImporter(object):
     logging.basicConfig(filename='dav.log', level=logging.INFO)
 
@@ -12,6 +11,7 @@ class DataImporter(object):
         self.user = user
         self.passwd = passwd
         self.port = port
+
 
     def import_data(self, schema, table, import_columns, prices_dataset):
         logging.info('Starting connection to database')
