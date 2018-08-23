@@ -28,10 +28,11 @@ class DataImporter(object):
                 cur.copy_from(f, schema+"."+table, columns=import_columns, sep=',')
                 conn.commit()
                 logging.info('Data imported')
-            except Exception, e:
-                logging.error(e.message)
+            except Exception as e:
+                logging.error(e.__str__())
                 logging.error('Error importing data')
         conn.close()
+
 
 if __name__ == '__main__':
         dir_path = os.path.dirname(os.path.abspath(__file__))
