@@ -1,2 +1,5 @@
 .idea/
 datasets/companylist.csv
+datasets/WIKI_PRICES.csv
+__pycache__/
+app/__pycache__/

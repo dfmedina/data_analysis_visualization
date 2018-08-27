@@ -1,7 +1,7 @@
 import unittest
 
 from mock import Mock, create_autospec
-#from django.utils.timezone import utc
+from django.utils.timezone import utc
 from datetime import datetime
 from elasticsearch import Elasticsearch
 
